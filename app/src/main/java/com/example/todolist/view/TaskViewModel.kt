@@ -14,8 +14,8 @@ class TaskViewModel : ViewModel() {
    // var selectedItemMutableLiveDate = MutableLiveData<TaskModel>()
    fun addItem(task: String,
                descripition: String,
-               date: Date,
-               duedate: Date,
+               date: String,
+               duedate: String,
                checkbox: Boolean){
        viewModelScope.launch {
            taskRepository.addItem(TaskModel(task,descripition,date,duedate,checkbox))

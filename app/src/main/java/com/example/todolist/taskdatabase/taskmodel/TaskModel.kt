@@ -8,8 +8,8 @@ import java.util.*
 class TaskModel(
  val task: String,
  val descripition: String,
- val date: Date,
- val duedaue: Date,
+ val date: String,
+ val duedaue: String,
  val checkbox: Boolean,
  @PrimaryKey(autoGenerate = true)
  val id: Int = 0
