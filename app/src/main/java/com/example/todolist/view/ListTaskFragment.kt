@@ -13,8 +13,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 
 class ListTaskFragment : Fragment() {
-    private val taskItems = mutableListOf<TaskModel>()
-    private val taskViewModel: TaskViewModel by activityViewModels()
+//    private val taskItems = mutableListOf<TaskModel>()
+//    private val taskViewModel: TaskViewModel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -23,18 +24,18 @@ class ListTaskFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_list_task, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val taskRecyclerView: RecyclerView = view.findViewById(R.id.task_recycler)
-        val addFloatingActionButton: FloatingActionButton = view.findViewById(R.id.floatingActionButton)
-       val taskAdapter = TaskAdapter(taskItems,taskViewModel)
-       taskRecyclerView.adapter = taskAdapter
-       taskViewModel.taskItems.observe(viewLifecycleOwner, {
-       it?.let {
-           taskItems.clear()
-           taskItems.addAll(taskItems)
-           taskAdapter.notifyDataSetChanged()
-       }
-       })
-    }
+//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+//        super.onViewCreated(view, savedInstanceState)
+//        val taskRecyclerView: RecyclerView = view.findViewById(R.id.task_recycler)
+//        val addFloatingActionButton: FloatingActionButton = view.findViewById(R.id.floatingActionButton)
+//       val taskAdapter = TaskAdapter(taskItems,taskViewModel)
+//       taskRecyclerView.adapter = taskAdapter
+//       taskViewModel.taskItems.observe(viewLifecycleOwner, {
+//       it?.let {
+//           taskItems.clear()
+//           taskItems.addAll(taskItems)
+//           taskAdapter.notifyDataSetChanged()
+//       }
+//       })
+//    }
 }
