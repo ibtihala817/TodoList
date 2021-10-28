@@ -41,13 +41,5 @@
             android:hint="DUE DATE "
             android:padding="10dp" />
 
-        <TextView
-            android:id="@+id/datetask_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="DATE RASK"
-            android:padding="10dp" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

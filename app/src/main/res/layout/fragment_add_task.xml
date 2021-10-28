@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".AddTaskFragment">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,16 +45,17 @@
             android:inputType="textPersonName" />
 
         <DatePicker
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp" />
 
         <Button
             android:id="@+id/save_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_margin="20dp"
             android:backgroundTint="#DCABBC"
             android:gravity="center"
             android:text="SAVE" />
