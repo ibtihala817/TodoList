@@ -14,7 +14,7 @@ import com.example.todolist.repository.TaskRepository
 import com.example.todolist.taskdatabase.taskmodel.TaskModel
 
 class TaskAdapter(val items:List<TaskModel>, val viewModel: TaskViewModel):
-RecyclerView.Adapter<TaskAdapter.TaskViewHolder{
+RecyclerView.Adapter<TaskAdapter.TaskViewHolder>(){
     class TaskViewHolder(view: View): RecyclerView.ViewHolder(view){
         val taskTextView: TextView = view.findViewById(R.id.task_textview)
         val descripitionTextView:TextView= view.findViewById(R.id.descripition_textview)
@@ -49,6 +49,6 @@ RecyclerView.Adapter<TaskAdapter.TaskViewHolder{
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+       return items.size
     }
 }

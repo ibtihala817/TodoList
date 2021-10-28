@@ -27,7 +27,14 @@ class ListTaskFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val taskRecyclerView: RecyclerView = view.findViewById(R.id.task_recycler)
         val addFloatingActionButton: FloatingActionButton = view.findViewById(R.id.floatingActionButton)
-       // val taskAdapter = TaskAdapter(taskItems,taskRecyclerView )
-       // taskRecyclerView.adapter = taskAdapter
+       val taskAdapter = TaskAdapter(taskItems,taskViewModel)
+       taskRecyclerView.adapter = taskAdapter
+       taskViewModel.taskItems.observe(viewLifecycleOwner, {
+       it?.let {
+           taskItems.clear()
+           taskItems.addAll(taskItems)
+           taskAdapter.notifyDataSetChanged()
+       }
+       })
     }
 }
