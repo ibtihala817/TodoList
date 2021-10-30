@@ -11,7 +11,7 @@ import java.util.*
 class TaskViewModel : ViewModel() {
     private val taskRepository = TaskRepository.get()
     var taskItems = taskRepository.getItems()
-   // var selectedItemMutableLiveDate = MutableLiveData<TaskModel>()
+   var selectedItemMutableLiveDate = MutableLiveData<TaskModel>()
    fun addItem(task: String,
                descripition: String,
                date: String,

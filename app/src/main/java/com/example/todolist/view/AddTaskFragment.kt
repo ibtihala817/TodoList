@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.DatePicker
+import android.widget.EditText
 import com.example.todolist.R
 
 
@@ -19,5 +22,20 @@ class AddTaskFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_add_task, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val taskEditText: EditText = view.findViewById(R.id.task_edittext)
+        val taskDescriptionEditText: EditText = view.findViewById(R.id.taskdescriptipn_edittext)
+        val taskDatePicker: DatePicker= view.findViewById(R.id.task_datepicker)
+        val saveButton: Button = view.findViewById(R.id.save_button)
+
+        saveButton.setOnClickListener{
+            val task =  taskEditText.text.toString()
+            val description = taskDescriptionEditText.text.toString()
+            val datePicker = taskDatePicker.maxDate.toString()
+
+        }
+    }
 
     }
