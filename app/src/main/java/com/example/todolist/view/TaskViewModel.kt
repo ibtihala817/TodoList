@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.todolist.repository.TaskRepository
 import com.example.todolist.taskdatabase.taskmodel.TaskModel
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
 import java.util.*
 
 class TaskViewModel : ViewModel() {
@@ -17,10 +18,12 @@ class TaskViewModel : ViewModel() {
                date: String,
                duedate: String,
                checkbox: Boolean){
+       val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss" )
+       val currentDate = sdf .format(Date())
        viewModelScope.launch {
            taskRepository.addItem(TaskModel(task,descripition,date,duedate,checkbox))
        }
-   fun updateItem(taskModel: TaskModel){
+        fun updateItem(taskModel: TaskModel){
        viewModelScope.launch {
            taskRepository.updateItem(taskModel)
        }
