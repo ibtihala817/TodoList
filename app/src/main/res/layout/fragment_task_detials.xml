@@ -21,25 +21,28 @@
             android:id="@+id/taskEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Task"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/DescripitionEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Descripition"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/DueDateEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="DueDate"
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

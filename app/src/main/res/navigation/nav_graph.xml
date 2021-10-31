@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/listTaskFragment"
         android:name="com.example.todolist.view.ListTaskFragment"
-        android:label="fragment_list_task"
+        android:label="Do it!"
         tools:layout="@layout/fragment_list_task">
         <action
             android:id="@+id/action_listTaskFragment_to_taskDetialsFragment"

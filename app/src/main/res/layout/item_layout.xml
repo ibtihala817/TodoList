@@ -10,7 +10,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
@@ -27,7 +30,7 @@
                     android:id="@+id/tesk_textviewDisplay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="32dp"
                     android:text="TextView"
                     app:layout_constraintEnd_toStartOf="@+id/delete_buttonList"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -36,8 +39,10 @@
 
                 <ImageButton
                     android:id="@+id/delete_buttonList"
-                    android:layout_width="58dp"
-                    android:layout_height="55dp"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
                     android:backgroundTint="#0B5394"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -47,6 +52,7 @@
                     android:id="@+id/duedatetextview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
                     android:text="TextView"
                     app:layout_constraintEnd_toStartOf="@+id/edit_button"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -55,8 +61,10 @@
 
                 <ImageButton
                     android:id="@+id/edit_button"
-                    android:layout_width="49dp"
-                    android:layout_height="56dp"
+                    android:layout_width="54dp"
+                    android:layout_height="51dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="12dp"
                     android:backgroundTint="#0B5394"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -64,8 +72,8 @@
 
                 <CheckBox
                     android:id="@+id/checkBox"
-                    android:layout_width="55dp"
-                    android:layout_height="84dp"
+                    android:layout_width="0dp"
+                    android:layout_height="65dp"
                     android:layout_margin="20dp"
                     android:layout_marginStart="8dp"
                     android:backgroundTint="#0B5394"
