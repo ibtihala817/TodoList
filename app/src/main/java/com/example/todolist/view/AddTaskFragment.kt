@@ -35,7 +35,7 @@ class AddTaskFragment : Fragment() {
         saveButton.setOnClickListener{
             val task =  taskEditText.text.toString()
             val description = taskDescriptionEditText.text.toString()
-            val datePicker = taskDatePicker.maxDate.toString()
+            val datePicker = "${taskDatePicker.year}/${taskDatePicker.month+1}/${taskDatePicker.dayOfMonth}"
             if (task.isNotEmpty() && description.isNotEmpty()){
 
             taskViewModel.addItem(task,description,datePicker,false)

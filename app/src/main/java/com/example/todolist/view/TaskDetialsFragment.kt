@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -27,27 +29,18 @@ class TaskDetialsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val taskTextView: TextView = view.findViewById(R.id.task_textview)
-        val descripitionTextView: TextView = view.findViewById(R.id.descripition_textview)
-        val duedateTextView: TextView = view.findViewById(R.id.duedate_textview)
-        val deleteButton: Button = view.findViewById(R.id.delete_button)
-        val editButton: Button = view.findViewById(R.id.edit_button)
+        val taskTextView: EditText= view.findViewById(R.id.taskEditText)
+        val descripitionTextView: EditText = view.findViewById(R.id.DescripitionEditText)
+        val duedateTextView: EditText = view.findViewById(R.id.DueDateEditText)
+
         taskViewModel.selectedItemMutableLiveDate.observe(viewLifecycleOwner,{
             it?.let { item ->
-                taskTextView.text = item.task
-                descripitionTextView.text = item.descripition
-                duedateTextView.text = item.duedaue
+                taskTextView.setText(item.task)
+                descripitionTextView.setText(item.descripition)
+                duedateTextView.setText(item.duedaue)
                 selectedItem = item
             }
         })
-        deleteButton.setOnClickListener {
-            taskViewModel.deleteItem(selectedItem)
 
-        findNavController().popBackStack()
-    }
-
-        editButton.setOnClickListener {
-            taskViewModel.updateItem(selectedItem)
-        }
 }}
 

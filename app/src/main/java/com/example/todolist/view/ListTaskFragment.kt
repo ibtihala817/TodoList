@@ -34,7 +34,7 @@ class ListTaskFragment : Fragment() {
           taskViewModel.taskItems.observe(viewLifecycleOwner, {
        it?.let {
           taskItems.clear()
-           taskItems.addAll(taskItems)
+           taskItems.addAll(it)
            taskAdapter.notifyDataSetChanged()
        }
        })

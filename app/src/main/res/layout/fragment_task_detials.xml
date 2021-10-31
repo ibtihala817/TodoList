@@ -17,29 +17,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/task_textview"
+        <EditText
+            android:id="@+id/taskEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="TASK"
-            android:padding="10dp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
-        <TextView
-            android:id="@+id/descripition_textview"
+        <EditText
+            android:id="@+id/DescripitionEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="TASK DESCRIPITION"
-            android:padding="10dp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
-        <TextView
-            android:id="@+id/duedate_textview"
+        <EditText
+            android:id="@+id/DueDateEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="DUE DATE "
-            android:padding="10dp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
