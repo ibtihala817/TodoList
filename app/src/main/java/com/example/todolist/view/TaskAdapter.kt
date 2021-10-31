@@ -8,6 +8,7 @@ import android.widget.CheckBox
 import android.widget.RemoteViews
 import android.widget.TextView
 import androidx.lifecycle.MutableLiveData
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
 import com.example.todolist.repository.TaskRepository
@@ -19,7 +20,7 @@ RecyclerView.Adapter<TaskAdapter.TaskViewHolder>(){
         val taskTextView: TextView = view.findViewById(R.id.task_textview)
         val descripitionTextView:TextView= view.findViewById(R.id.descripition_textview)
         val duedateTextView: TextView = view.findViewById(R.id.duedate_textview)
-        val checkBox: CheckBox = view.findViewById(R.id.checkBox)
+        var checkBox: CheckBox = view.findViewById(R.id.checkBox)
         val deletebutton: Button = view.findViewById(R.id.delete_button)
         val editbutton: Button= view.findViewById(R.id.edit_button)
     }
@@ -44,7 +45,12 @@ RecyclerView.Adapter<TaskAdapter.TaskViewHolder>(){
 
         }
         holder.editbutton.setOnClickListener(){
-
+        viewModel.selectedItemMutableLiveDate.postValue(item)
+            it.findNavController().navigate(R.id.action_listTaskFragment_to_taskDetialsFragment)
+        }
+        holder.checkBox.setOnClickListener {
+            item.checkbox = holder.checkBox.isChecked
+            viewModel.updateItem(item)
         }
     }
 

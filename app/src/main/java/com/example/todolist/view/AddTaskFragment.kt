@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.todolist.R
 
 
 class AddTaskFragment : Fragment() {
 
-
+   private val taskViewModel: TaskViewModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,8 +36,12 @@ class AddTaskFragment : Fragment() {
             val task =  taskEditText.text.toString()
             val description = taskDescriptionEditText.text.toString()
             val datePicker = taskDatePicker.maxDate.toString()
+            if (task.isNotEmpty() && description.isNotEmpty()){
+
+            taskViewModel.addItem(task,description,datePicker,false)
+            findNavController().popBackStack()
 
         }
     }
 
-    }
+    }}

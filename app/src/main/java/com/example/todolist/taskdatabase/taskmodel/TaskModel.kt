@@ -10,7 +10,7 @@ class TaskModel(
  val descripition: String,
  val date: String,
  val duedaue: String,
- val checkbox: Boolean,
+ var checkbox: Boolean,
  @PrimaryKey(autoGenerate = true)
  val id: Int = 0
 )

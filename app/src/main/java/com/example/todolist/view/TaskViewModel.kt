@@ -10,28 +10,33 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class TaskViewModel : ViewModel() {
+
     private val taskRepository = TaskRepository.get()
     var taskItems = taskRepository.getItems()
    var selectedItemMutableLiveDate = MutableLiveData<TaskModel>()
    fun addItem(task: String,
                descripition: String,
-               date: String,
                duedate: String,
                checkbox: Boolean){
        val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss" )
        val currentDate = sdf .format(Date())
+
        viewModelScope.launch {
-           taskRepository.addItem(TaskModel(task,descripition,date,duedate,checkbox))
+           taskRepository.addItem(TaskModel(task,descripition,currentDate,duedate,checkbox))
        }
-        fun updateItem(taskModel: TaskModel){
-       viewModelScope.launch {
-           taskRepository.updateItem(taskModel)
-       }
+
    }
-   fun deleteItem(taskModel: TaskModel){
-       viewModelScope.launch {
-           taskRepository.deleteItem(taskModel)
-       }
+
+    fun updateItem(taskModel: TaskModel){
+        viewModelScope.launch {
+            taskRepository.updateItem(taskModel)
+        }
+
    }
-   }
+
+    fun deleteItem(taskModel: TaskModel){
+        viewModelScope.launch {
+            taskRepository.deleteItem(taskModel)
+        }
+    }
 }

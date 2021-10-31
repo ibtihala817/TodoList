@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -29,7 +30,8 @@ class TaskDetialsFragment : Fragment() {
         val taskTextView: TextView = view.findViewById(R.id.task_textview)
         val descripitionTextView: TextView = view.findViewById(R.id.descripition_textview)
         val duedateTextView: TextView = view.findViewById(R.id.duedate_textview)
-
+        val deleteButton: Button = view.findViewById(R.id.delete_button)
+        val editButton: Button = view.findViewById(R.id.edit_button)
         taskViewModel.selectedItemMutableLiveDate.observe(viewLifecycleOwner,{
             it?.let { item ->
                 taskTextView.text = item.task
@@ -38,6 +40,14 @@ class TaskDetialsFragment : Fragment() {
                 selectedItem = item
             }
         })
+        deleteButton.setOnClickListener {
+            taskViewModel.deleteItem(selectedItem)
+
         findNavController().popBackStack()
     }
-}
+
+        editButton.setOnClickListener {
+            taskViewModel.updateItem(selectedItem)
+        }
+}}
+
