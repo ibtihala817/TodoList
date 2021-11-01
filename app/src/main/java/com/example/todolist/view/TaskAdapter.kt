@@ -52,6 +52,7 @@ RecyclerView.Adapter<TaskAdapter.TaskViewHolder>(){
         holder.itemView.setOnClickListener(){
             viewModel.selectedItemMutableLiveDate.postValue(item)
             it.findNavController().navigate(R.id.action_listTaskFragment_to_taskDetialsFragment)
+
         }
 
         var currentDate = Date()

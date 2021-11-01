@@ -44,5 +44,13 @@
             android:hint="DueDate"
             android:inputType="textPersonName" />
 
+        <Button
+            android:id="@+id/save_editbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="SAVE"
+            android:textSize="24sp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

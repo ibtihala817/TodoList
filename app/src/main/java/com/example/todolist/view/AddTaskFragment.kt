@@ -1,6 +1,7 @@
 package com.example.todolist.view
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,8 @@ import android.widget.EditText
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.todolist.R
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class AddTaskFragment : Fragment() {
@@ -35,10 +38,12 @@ class AddTaskFragment : Fragment() {
         saveButton.setOnClickListener{
             val task =  taskEditText.text.toString()
             val description = taskDescriptionEditText.text.toString()
-            val datePicker = "${taskDatePicker.year}/${taskDatePicker.month+1}/${taskDatePicker.dayOfMonth}"
+            val datePicker = "${taskDatePicker.year}/${taskDatePicker.month+1}/${taskDatePicker.dayOfMonth} "
+            val duedatetime = SimpleDateFormat("dd/M/yyyy hh:mm:ss" )
+            Log.d("duedatetime", duedatetime.toString())
             if (task.isNotEmpty() && description.isNotEmpty()){
 
-            taskViewModel.addItem(task,description,datePicker,false)
+            taskViewModel.addItem(task,description,datePicker,duedatetime, false)
             findNavController().popBackStack()
 
         }

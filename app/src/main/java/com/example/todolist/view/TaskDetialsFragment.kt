@@ -32,7 +32,7 @@ class TaskDetialsFragment : Fragment() {
         val taskTextView: EditText= view.findViewById(R.id.taskEditText)
         val descripitionTextView: EditText = view.findViewById(R.id.DescripitionEditText)
         val duedateTextView: EditText = view.findViewById(R.id.DueDateEditText)
-
+        val saveeditText : Button = view.findViewById(R.id.save_editbutton)
         taskViewModel.selectedItemMutableLiveDate.observe(viewLifecycleOwner,{
             it?.let { item ->
                 taskTextView.setText(item.task)
@@ -41,6 +41,13 @@ class TaskDetialsFragment : Fragment() {
                 selectedItem = item
             }
         })
+        saveeditText.setOnClickListener {
+            selectedItem.task = taskTextView.text.toString()
+            selectedItem.descripition = descripitionTextView.text.toString()
+            selectedItem.duedaue = duedateTextView.text.toString()
+            taskViewModel.updateItem(selectedItem)
+            findNavController().popBackStack()
+        }
 
 }}
 

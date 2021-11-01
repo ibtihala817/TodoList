@@ -6,11 +6,11 @@ import java.util.*
 
 @Entity
 class TaskModel(
- val task: String,
- val descripition: String,
- val date: String,
- val duedaue: String,
- var checkbox: Boolean,
- @PrimaryKey(autoGenerate = true)
+    var task: String,
+    var descripition: String,
+    val date: String,
+    var duedaue: String,
+    var checkbox: Boolean,
+    @PrimaryKey(autoGenerate = true)
  val id: Int = 0
 )

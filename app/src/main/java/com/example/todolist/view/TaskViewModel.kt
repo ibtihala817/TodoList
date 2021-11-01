@@ -1,5 +1,6 @@
 package com.example.todolist.view
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -19,7 +20,10 @@ class TaskViewModel : ViewModel() {
                duedate: String,
                checkbox: Boolean){
        val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss" )
+//       Log.d("sdf", sdf.toString())
        val currentDate = sdf .format(Date())
+//       Log.d("currentDate", currentDate.toString())
+
 
        viewModelScope.launch {
            taskRepository.addItem(TaskModel(task,descripition,currentDate,duedate,checkbox))
