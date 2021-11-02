@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE599"
+    android:background="#FFFFFF"
     tools:context=".view.MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
@@ -12,7 +12,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:background="#FFE599"
+        android:background="#FFFFFF"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

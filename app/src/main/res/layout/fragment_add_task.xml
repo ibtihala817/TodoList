@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE599">
+    android:background="#FFFFFF">
 
     <ScrollView
         android:layout_width="0dp"
@@ -35,17 +35,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:backgroundTint="#0B5394"
+            android:backgroundTint="#7B1818"
             android:ems="10"
             android:hint="Task"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/taskdescriptipn_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="392dp"
+            android:layout_height="79dp"
             android:layout_margin="10dp"
-            android:backgroundTint="#0B5394"
+            android:backgroundTint="#7B1818"
             android:ems="10"
             android:hint="Task Descripition "
             android:inputType="textPersonName" />
@@ -56,15 +56,15 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:headerBackground="#0B5394" />
+            android:headerBackground="#7B1818" />
 
         <Button
             android:id="@+id/save_button"
-            android:layout_width="match_parent"
+            android:layout_width="311dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
-            android:backgroundTint="#0B5394"
+            android:backgroundTint="#7B1818"
             android:gravity="center"
             android:text="SAVE"
             android:textSize="24sp" />

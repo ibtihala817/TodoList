@@ -16,7 +16,7 @@
  As a user, I want to see in my HomeScreen ( Task, dueDate , completed or uncompleted).
  As a user, I want to see the dueDate under the taskTitle in order to do it on it's time. 
  As a user, I want to click on edit button to shows me the task details 
- As a user, I want to click on the task to shows mw the task details.
+ As a user, I want to click on the task to shows me the task details.
  As a user, I want to If I do the task before the due time , I click on checkbox 
  As a user, I want to add "task , due date, task description"
  
