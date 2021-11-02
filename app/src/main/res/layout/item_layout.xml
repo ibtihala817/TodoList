@@ -20,18 +20,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFE599"
+            app:cardUseCompatPadding="true"
             android:backgroundTint="#FFE599">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10 dp"
+                android:layout_margin="10dp"
                 android:padding="10dp">
 
                 <TextView
                     android:id="@+id/tesk_textviewDisplay"
-                    android:layout_width="100dp"
-                    android:layout_height="17dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:text="TextView"
                     app:layout_constraintEnd_toStartOf="@+id/delete_buttonList"
@@ -52,8 +53,8 @@
 
                 <TextView
                     android:id="@+id/duedatetextview"
-                    android:layout_width="98dp"
-                    android:layout_height="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:layout_marginTop="8dp"
                     android:text="TextView"

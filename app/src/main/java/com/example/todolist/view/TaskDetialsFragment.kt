@@ -1,5 +1,9 @@
 package com.example.todolist.view
 
+import android.annotation.SuppressLint
+import android.app.DatePickerDialog
+import android.content.DialogInterface
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,10 +13,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.todolist.R
 import com.example.todolist.taskdatabase.taskmodel.TaskModel
+import com.google.android.material.datepicker.MaterialDatePicker
 
 
 class TaskDetialsFragment : Fragment() {
@@ -27,6 +33,8 @@ class TaskDetialsFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_task_detials, container, false)
     }
 
+    @SuppressLint("SetTextI18n")
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val taskTextView: EditText= view.findViewById(R.id.taskEditText)
@@ -48,6 +56,18 @@ class TaskDetialsFragment : Fragment() {
             taskViewModel.updateItem(selectedItem)
             findNavController().popBackStack()
         }
+        val dateRangePicker = DatePickerDialog(requireActivity())
+        duedateTextView.setOnClickListener {
 
-}}
+            dateRangePicker.show()
+
+        }
+        
+        dateRangePicker.setButton(DialogInterface.BUTTON_POSITIVE, "OK") { _, _ ->
+            duedateTextView.setText("${dateRangePicker.datePicker.year}/" +
+                    "${dateRangePicker.datePicker.month}/" +
+                    "${dateRangePicker.datePicker.dayOfMonth}")
+        }
+
+    }}
 

@@ -24,7 +24,8 @@
             android:layout_margin="15dp"
             android:ems="10"
             android:hint="Task"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/DescripitionEditText"
@@ -33,16 +34,20 @@
             android:layout_margin="15dp"
             android:ems="10"
             android:hint="Descripition"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
         <EditText
             android:id="@+id/DueDateEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:editable="false"
             android:ems="10"
+            android:focusable="false"
             android:hint="DueDate"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:padding="15dp" />
 
         <Button
             android:id="@+id/save_editbutton"

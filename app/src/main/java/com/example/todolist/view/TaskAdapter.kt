@@ -40,6 +40,8 @@ RecyclerView.Adapter<TaskAdapter.TaskViewHolder>(){
         holder.taskTextView.text = item.task
         holder.duedateTextView.text = item.duedaue
         holder.checkBox.isChecked = item.checkbox
+
+
         holder.deletebutton.setOnClickListener(){
             viewModel.deleteItem(item)
 
@@ -52,7 +54,6 @@ RecyclerView.Adapter<TaskAdapter.TaskViewHolder>(){
         holder.itemView.setOnClickListener(){
             viewModel.selectedItemMutableLiveDate.postValue(item)
             it.findNavController().navigate(R.id.action_listTaskFragment_to_taskDetialsFragment)
-
         }
 
         var currentDate = Date()

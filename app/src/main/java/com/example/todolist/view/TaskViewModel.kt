@@ -19,10 +19,10 @@ class TaskViewModel : ViewModel() {
                descripition: String,
                duedate: String,
                checkbox: Boolean){
-       val sdf = SimpleDateFormat("dd/M/yyyy hh:mm:ss" )
-//       Log.d("sdf", sdf.toString())
+       val sdf = SimpleDateFormat("dd/MM/yyyy hh:mm:ss" )
+
        val currentDate = sdf .format(Date())
-//       Log.d("currentDate", currentDate.toString())
+
 
 
        viewModelScope.launch {

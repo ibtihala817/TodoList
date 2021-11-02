@@ -39,11 +39,10 @@ class AddTaskFragment : Fragment() {
             val task =  taskEditText.text.toString()
             val description = taskDescriptionEditText.text.toString()
             val datePicker = "${taskDatePicker.year}/${taskDatePicker.month+1}/${taskDatePicker.dayOfMonth} "
-            val duedatetime = SimpleDateFormat("dd/M/yyyy hh:mm:ss" )
-            Log.d("duedatetime", duedatetime.toString())
+
             if (task.isNotEmpty() && description.isNotEmpty()){
 
-            taskViewModel.addItem(task,description,datePicker,duedatetime, false)
+            taskViewModel.addItem(task,description,datePicker,false)
             findNavController().popBackStack()
 
         }
