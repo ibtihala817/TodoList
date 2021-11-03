@@ -12,7 +12,11 @@
    figma link 
  # user stories 
  As a user, I want to add the task to my application so that I can remember it later.
+
+
  As a user, I want to edit my task each time so that I can make an update to the current task.
+
+
  As a user, I want to delete my task so that I can remove my completed task.
  As a user, I want my application to show me the due date, so that I can remember to do the task in the due date. 
  As a user, I want in my application to check if I complete it my task so I can do another task. 
