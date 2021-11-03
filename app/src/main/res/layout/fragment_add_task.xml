@@ -23,8 +23,8 @@
 
             <EditText
                 android:id="@+id/task_edittext"
-                android:layout_width="457dp"
-                android:layout_height="66dp"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
                 android:layout_margin="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
