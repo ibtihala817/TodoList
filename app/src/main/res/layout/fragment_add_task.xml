@@ -10,64 +10,56 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/task_edittext"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#7B1818"
-            android:ems="10"
-            android:hint="Task"
-            android:inputType="textPersonName" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/taskdescriptipn_edittext"
-            android:layout_width="392dp"
-            android:layout_height="79dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="#7B1818"
-            android:ems="10"
-            android:hint="Task Descripition "
-            android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/task_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#7B1818"
+                android:ems="10"
+                android:hint="Task"
+                android:inputType="textPersonName" />
 
-        <DatePicker
-            android:id="@+id/task_datepicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:headerBackground="#7B1818" />
+            <EditText
+                android:id="@+id/taskdescriptipn_edittext"
+                android:layout_width="466dp"
+                android:layout_height="71dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#7B1818"
+                android:ems="10"
+                android:hint="Task Descripition "
+                android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/save_button"
-            android:layout_width="311dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="20dp"
-            android:backgroundTint="#7B1818"
-            android:gravity="center"
-            android:text="SAVE"
-            android:textSize="24sp" />
+            <DatePicker
+                android:id="@+id/task_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:headerBackground="#7B1818" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:backgroundTint="#7B1818"
+                android:gravity="center"
+                android:text="SAVE"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
