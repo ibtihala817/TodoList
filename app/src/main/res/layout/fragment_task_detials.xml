@@ -15,14 +15,17 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <EditText
             android:id="@+id/taskEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:background="@drawable/apptodo"
             android:ems="10"
             android:hint="Task"
             android:inputType="textPersonName"
@@ -33,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:background="@drawable/apptodo"
             android:ems="10"
             android:hint="Descripition"
             android:inputType="textPersonName"
@@ -43,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
+            android:background="@drawable/apptodo"
             android:editable="false"
             android:ems="10"
             android:focusable="false"
@@ -55,8 +60,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="SAVE"
-            android:textSize="24sp" />
+            android:text="EDIT"
+            android:textSize="24sp"
+            app:cornerRadius="15dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,8 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:paddingLeft="15dp">
 
     <ScrollView
         android:layout_width="0dp"
@@ -22,24 +23,30 @@
 
             <EditText
                 android:id="@+id/task_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="457dp"
+                android:layout_height="66dp"
                 android:layout_margin="10dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/apptodo"
                 android:backgroundTint="#7B1818"
                 android:ems="10"
                 android:hint="Task"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp" />
 
             <EditText
                 android:id="@+id/taskdescriptipn_edittext"
-                android:layout_width="466dp"
+                android:layout_width="match_parent"
                 android:layout_height="71dp"
                 android:layout_margin="10dp"
+                android:background="@drawable/apptodo"
                 android:backgroundTint="#7B1818"
                 android:ems="10"
                 android:hint="Task Descripition "
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:paddingLeft="15dp" />
 
             <DatePicker
                 android:id="@+id/task_datepicker"
@@ -51,14 +58,15 @@
 
             <Button
                 android:id="@+id/save_button"
-                android:layout_width="311dp"
+                android:layout_width="357dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:backgroundTint="#7B1818"
                 android:gravity="center"
                 android:text="SAVE"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                app:cornerRadius="15dp" />
         </LinearLayout>
     </ScrollView>
 
