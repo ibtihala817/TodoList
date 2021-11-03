@@ -26,10 +26,9 @@
   - Writing Codes 
   - Figma 
   - My development process and problem solving strategy is starting the design in Android Studio by using
- fragment XML, and writing the code and when I face a problem I search in google to find a solution to
+ fragments XML, and writing the code and when I face a problem I search in google to find a solution to
  my errors and finding interesting websites as Material Design website, and learning to be more patience 
- and it takes me less time than before to figure out the errors. 
- Another problem solving strategy is Mr.Mohamed, Mr.Saad, and classmate Ghadeer 
+ and it takes me less time than before to figure out the errors.
 # List unsolved problems which would be fixed in future iterations.
  - filtering 
  - sorting 
@@ -38,3 +37,8 @@
 # Describe how some of your favorite functions work
  - learning "Material Card View" it give the design more flexibility to work with and change it's shape, color, stroke.....ets
  - learning how to use codes from "Material Design website" and put it in my code without errors 
+# Final Result of the App 
+ ![app#2](https://github.com/ibtihala817/TodoList/blob/d2689b25d2852745736060e00ba07b13b439266f/app%232.png)
+ ![app#4](https://github.com/ibtihala817/TodoList/blob/d2689b25d2852745736060e00ba07b13b439266f/app%234.png)
+ ![homescreen#1](https://github.com/ibtihala817/TodoList/blob/d2689b25d2852745736060e00ba07b13b439266f/homescreen%231.png)
+ ![app#3](https://github.com/ibtihala817/TodoList/blob/d2689b25d2852745736060e00ba07b13b439266f/app%233.png)
