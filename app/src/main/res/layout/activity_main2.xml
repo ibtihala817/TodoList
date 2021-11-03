@@ -29,7 +29,7 @@
         android:gravity="center"
         android:paddingEnd="30dp"
         android:text="Do it!"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textColorLink="@color/white"
         android:textSize="96sp"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,15 +1,16 @@
 # TodoList
 ![img](https://github.com/ibtihala817/TodoList/blob/b38f97ab9fb1f2d8e686ce98d262b5b6c70b326c/img.png)
 # List technologies used
- Google searching 
- Kotlin language
- Android Studio 
- Figma
- Java libraries 
+ - Google searching 
+ - Kotlin language
+ - Android Studio 
+ - Figma
+ - Java libraries 
 
 # Link to wireframes and user stories   
  # wireframes 
-   figma link 
+   figma link https://www.figma.com/file/nfjGXTXVorYUMH1FMY9lFP/TO-DO-LIST?node-id=0%3A1
+  ![number#1](https://github.com/ibtihala817/TodoList/blob/00cc2fff42594e30f428880ae97799496b7e3264/number%231.png)
  # user stories
   - As a user, I want to add the task to my application so that I can remember it later.
   - As a user, I want to edit my task each time so that I can make an update to the current task.
@@ -23,8 +24,8 @@
   - OutLine my plan: 
   - Designing Android Studio
   - Writing Codes 
-  -  Figma 
- My development process and problem solving strategy is starting the design in Android Studio by using
+  - Figma 
+  - My development process and problem solving strategy is starting the design in Android Studio by using
  fragment XML, and writing the code and when I face a problem I search in google to find a solution to
  my errors and finding interesting websites as Material Design website, and learning to be more patience 
  and it takes me less time than before to figure out the errors. 
