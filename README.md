@@ -10,19 +10,15 @@
 # Link to wireframes and user stories   
  # wireframes 
    figma link 
- # user stories 
- As a user, I want to add the task to my application so that I can remember it later.
-
-
- As a user, I want to edit my task each time so that I can make an update to the current task.
-
-
- As a user, I want to delete my task so that I can remove my completed task.
- As a user, I want my application to show me the due date, so that I can remember to do the task in the due date. 
- As a user, I want in my application to check if I complete it my task so I can do another task. 
- As a user, I want to see in my HomeScreen ( Task, dueDate , completed or uncompleted) so that it can be easier to me to use.
- As a user, I want to see the dueDate under the taskTitle so that I can do it on it's time. 
- As a user, I want to use this application everyday so that I can organize my tasks that I would do each day 
+ # user stories
+  - As a user, I want to add the task to my application so that I can remember it later.
+  - As a user, I want to edit my task each time so that I can make an update to the current task.
+  - As a user, I want to delete my task so that I can remove my completed task. 
+  - As a user, I want my application to show me the due date, so that I can remember to do the task in the due date. 
+  - As a user, I want in my application to check if I complete it my task so I can do another task. 
+  - As a user, I want to see in my HomeScreen ( Task, dueDate , completed or uncompleted) so that it can be easier to me to use.
+  - As a user, I want to see the dueDate under the taskTitle so that I can do it on it's time. 
+  - As a user, I want to use this application everyday so that I can organize my tasks that I would do each day 
 # Document your planning and tell a story about your development process and problem-solving strategy. 
  OutLine my plan: 
  Designing Android Studio 
