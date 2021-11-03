@@ -11,6 +11,9 @@
  # wireframes 
    figma link https://www.figma.com/file/nfjGXTXVorYUMH1FMY9lFP/TO-DO-LIST?node-id=0%3A1
   ![number#1](https://github.com/ibtihala817/TodoList/blob/00cc2fff42594e30f428880ae97799496b7e3264/number%231.png)
+  ![number#2](https://github.com/ibtihala817/TodoList/blob/79abc0cc015ec5996997b09704ab5c445a2724cd/number%232.png)
+  ![number#3](https://github.com/ibtihala817/TodoList/blob/2bd0800cb60d9023d24133811a98883dca7d0bad/number%233.png)
+  ![number#4](https://github.com/ibtihala817/TodoList/blob/88a135fed336ee7f1018ffe3fc67ecf942f1af39/number%234.png)
  # user stories
   - As a user, I want to add the task to my application so that I can remember it later.
   - As a user, I want to edit my task each time so that I can make an update to the current task.
