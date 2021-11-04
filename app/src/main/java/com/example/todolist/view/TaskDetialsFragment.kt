@@ -65,7 +65,7 @@ class TaskDetialsFragment : Fragment() {
         
         dateRangePicker.setButton(DialogInterface.BUTTON_POSITIVE, "OK") { _, _ ->
             duedateTextView.setText("${dateRangePicker.datePicker.year}/" +
-                    "${dateRangePicker.datePicker.month}/" +
+                    "${dateRangePicker.datePicker.month+1}/" +
                     "${dateRangePicker.datePicker.dayOfMonth}")
         }
 
